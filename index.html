@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de textos</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="centered">
+        <div id="editor">
+            <nav id="toolbar">
+                <div>
+                    <img class="icon" src="images/bold-icon.png" data-action="bold">
+                </div>
+                <div>
+                    <img class="icon" src="images/italic-icon.png" data-action="italic">
+                </div>
+                <div>
+                    <img class="icon" src="images/underline-icon.png" data-action="underline">
+                </div>
+                <div>
+                    <img class="icon" src="images/list-icon.png" data-action="list">
+                </div>
+            </nav>
+
+            <div contenteditable="true" id="header-textarea">Cabeçalho</div>
+            <div contenteditable="true" id="paragraph-textarea">Seu texto aqui</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/text-style-changer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#editor {
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    width: 548px;
+    height: 500px;
+    border-radius: 4.5px;
+    box-shadow: 4px 4px 25px gray;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 45px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.icon {
+    width: 20px;
+    margin: 7px;
+}
+
+div[contenteditable="true"] {
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: none;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 90%;
+    overflow: auto;
+}
+
+#header-textarea {
+    font-size: 2em;
+    height: 82px;
+}
+
+#paragraph-textarea {
+    font-size: 1em;
+    height: 50%;
+    margin-top: 15px;
+}
+
+::selection {
+    background-color: #ABE3ED88;
+}
