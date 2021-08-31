@@ -42,7 +42,7 @@ icons.forEach((icon) => {
 
         const selectedText = document.getSelection().toString();
 
-        if (tag == 'span style="text-decoration: underline"') {                                                   // Isso faz com que o próximo texto a ser escrito não mantenha a formatação atual
+        if (tag == 'span style="text-decoration: underline"') {                                                   
             currentDivEl.innerHTML = currentDivEl.innerHTML.replace(selectedText, `<${tag}>${selectedText}</span><span>&nbsp;</span>`);
         } else if (tag == 'li') {
             currentDivEl.innerHTML = currentDivEl.innerHTML.replace(selectedText, `\u2022 ${selectedText}`);
